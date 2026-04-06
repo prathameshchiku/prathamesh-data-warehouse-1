@@ -1,4 +1,4 @@
-**SQL Data Warehouse Project**
+# **SQL Data Warehouse Project**
 
 **📝 Project Overview**
 This project demonstrates the end-to-end development of a modern SQL Data Warehouse from scratch. It follows industry best practices for data engineering, including architecture design, ETL processes, and data modeling.
