@@ -57,7 +57,35 @@ ON		  sd.sls_prd_key= pr.product_number;
 
 
 -- THE GOLD JOIN
-select * 
+select 
+f.order_number,
+f.order_date,
+f.ship_date,
+f.due_date,
+f.quantity,
+f.price,
+f.sales_amount,
+c.customer_key,
+c.customer_id,
+c.customer_number,
+c.first_name,
+c.last_name,
+c.marital_status,
+c.gender,
+c.birth_date,
+c.country,
+c.create_date,
+p.product_key,
+p.product_id,
+p.product_number,
+p.product_name,
+p.category_id,
+p.category,
+p.sub_category,
+p.Maintenance,
+p.product_line,
+p.cost,
+p.start_date
 from gold.fact_sales AS f
 LEFT JOIN gold.dim_customers as c
 ON		  f.customer_key = c.customer_key
